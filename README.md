@@ -1,7 +1,3 @@
-# Plantilla del curso de desarrollo ágil 
+ ##Integrantes
+ - José Pablo Márquez Megías https://www.linkedin.com/in/jose-pablo-m%C3%A1rquez-meg%C3%ADas-3942241a3/
 
-Plantilla para el [curso de desarrollo ágil](https://jj.github.io/curso-tdd)
-
-Contiene el mínimo para un proyecto, incluyendo una GitHub action que
-comprueba la presencia de ciertos ficheros, un directorio para los
-tests, y otro para la documentación.
