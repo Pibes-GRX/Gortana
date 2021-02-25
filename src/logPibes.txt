@@ -1,0 +1,2 @@
+2021/02/25 19:13:51 Registrada acción en el log
+2021/02/25 19:15:41 Se ha realizado una ejecución satisfatoria

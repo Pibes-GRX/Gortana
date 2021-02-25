@@ -10,3 +10,8 @@ Nuestro objetivo es crear un bot de Telegram que analice conversaciones y extrai
 
 ## Solución
 Para abordar este problema vamos a desarrollar un hook (es decir, un programa que reaccionará ante las peticiones realizadas a través de una funcionalidad a la que esté suscrita) usando la API de Telegram para Go [Telebot](https://github.com/tucnak/telebot), en conjunto con un diccionario de respuestas.
+
+## Tecnologías que usaremos
+- Logger: [Paquete log.go](https://golang.org/pkg/log/)
+- Configuración Remota: Próximamente
+- BBDD: Próximamente
