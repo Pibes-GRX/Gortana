@@ -6,7 +6,7 @@
  - [Miquel Reyes Castells](https://www.linkedin.com/in/miquel-reyes/)
 
 ## Descripción del proyecto
-Nuestro objetivo es crear un bot de Telegram que analice conversaciones y extraiga los datos principales con el propósito de agilizar la tediosa tarea de tener que leer cientos de mensajes para saber qué está pasando. Adicionalmente se incluirán diversas funcionalidades tales como análisis estadístico y otras propuestas aún en desarrollo.
+Nuestro objetivo es crear un bot de Telegram que haga un análisis estadístico de los mensajes en un chat, siendo capaz de extraer quien es la persona que más habla, cuáles son las palabras más usadas, además de hacer de agente conversacional (obviamente estará muy limitado pues se usará una batería de palabras y respuestas, en lugar de una Inteligencia Artificial como tal).
 
 ## Solución
 Para abordar este problema vamos a desarrollar un hook (es decir, un programa que reaccionará ante las peticiones realizadas a través de una funcionalidad a la que esté suscrita) usando la API de Telegram para Go [Telebot](https://github.com/tucnak/telebot), en conjunto con un diccionario de respuestas.
