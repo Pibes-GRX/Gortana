@@ -13,5 +13,5 @@ Para abordar este problema vamos a desarrollar un hook (es decir, un programa qu
 
 ## Tecnologías que usaremos
 - Logger: [Paquete log.go](https://golang.org/pkg/log/)
-- Configuración Remota: Próximamente
-- BBDD: Próximamente
+- Configuración Remota: Actualmente no se va a usar ninguna. Pero en el caso de comenzar a usar una sería [go-remote-config](https://github.com/zencoder/go-remote-config)
+- BBDD: MariaDB (susceptible a cambios)
