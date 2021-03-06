@@ -1,3 +1,6 @@
 personas:
  - Philip Price
  - Angela Moss
+
+excepciones:
+ - src/exceptions.go

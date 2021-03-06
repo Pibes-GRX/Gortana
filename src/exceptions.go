@@ -1,38 +1,39 @@
 package main
 
 import (
-    "fmt"
-    "database/sql"
-    _ "github.com/go-sql-driver/mysql"
-)
-import "log"
-import "os"
-import "fmt"
+	"database/sql"
+	"fmt"
+	"log"
+	"os"
 
-func main() {
+	_ "github.com/go-sql-driver/mysql"
+)
+
+func openLog() {
 
 	file, err := os.OpenFile("logPibes.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-    	if err != nil {
+	if err != nil {
 		log.Fatal(err)
 		panic(err.Error("Unable to open log file"))
-    	}
+	}
+}
 
-        fmt.Println("Hello world")
-	log.Println("Action registered into log")
+func dbConnection() {
 
-	log.SetOutput(file)
-	log.Println("Action sucessfully executed")
+	// Open up our database connection.
+	// The database is called testDb
+	db, err := sql.Open("mysql", "username:password@tcp(127.0.0.1:3306)/test")
 
-    // Open up our database connection.
-    // The database is called testDb
-    db, err := sql.Open("mysql", "username:password@tcp(127.0.0.1:3306)/test")
+	if err != nil {
+		panic(err.Error("Connection to the DB failed"))
+	}
+}
 
-    if err != nil {
-        panic(err.Error("Connection to the DB failed"))
-    }
+func dbClose(driver.Conn db) {
 
-    // defer the close till after the main function has finished
-    // executing
-    defer db.Close()
-
+	if db == nil {
+		panic(err.Error("BD is not connected!"))
+	} else {
+		defer db.Close()
+	}
 }
