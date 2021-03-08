@@ -11,3 +11,7 @@ lenguaje:
 taskfile:
  - "Makefile"
  
+linter:
+ - "golangci-lint"
+
+ 
