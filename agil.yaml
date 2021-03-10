@@ -13,4 +13,3 @@ taskfile:
  
 linter:
  - "golangci-lint"
- 
