@@ -27,6 +27,8 @@ func dbConnection() {
 	if err != nil {
 		panic(err.Error("Connection to the DB failed"))
 	}
+
+	return db
 }
 
 func dbClose(driver.Conn db) {

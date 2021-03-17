@@ -13,3 +13,8 @@ taskfile:
  
 linter:
  - "golangci-lint"
+
+test:
+  - test/aserciones.go
+
+aserciones: "testify"
