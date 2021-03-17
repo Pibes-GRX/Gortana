@@ -15,3 +15,6 @@ Para abordar este problema vamos a desarrollar un hook (es decir, un programa qu
 - Logger: [Paquete log.go](https://golang.org/pkg/log/)
 - Configuración Remota: Actualmente no se va a usar ninguna. Pero en el caso de comenzar a usar una sería [go-remote-config](https://github.com/zencoder/go-remote-config)
 - BBDD: MariaDB (susceptible a cambios)
+
+# Instrucciones
+Para ejecutar los test basta con ejecutar `make test`, el cual devolverá por terminal el resultado de pasar dichos test y sus respectivas aserciones.

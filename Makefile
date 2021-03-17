@@ -1,7 +1,7 @@
 BINARY_NAME=prueba
 
 test:
-	echo "Makefile detectado!"
+	go test tests/aserciones_test.go
 
 build:
 	echo "Compilo $(BINARY_NAME)"
